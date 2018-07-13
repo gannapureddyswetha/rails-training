@@ -1,0 +1,1 @@
+--with-xml2-dir=/usr/local/opt/libxml2 --with-xslt-dir=/usr/local --with-iconv-dir=/usr/local
