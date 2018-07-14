@@ -3,7 +3,7 @@ lock "~> 3.11.0"
 
 set :application, "rails-training"
 set :scm, :git
-set :repo_url, "git@github.com/gannapureddyswetha/rails-training.git"
+set :repo_url, "https://github.com/gannapureddyswetha/rails-training.git"
 set :jenkins_host, "http://192.168.76.76:8080"
 
 # Default branch is :master
