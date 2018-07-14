@@ -1,6 +1,6 @@
 rails {
-  MYSQL_DATABASE = 'db_name'
-  MYSQL_USER = 'db_user'
+  #MYSQL_DATABASE = 'db_name'
+  #MYSQL_USER = 'db_user'
   MYSQL_PASSWORD = 'db_password'
   MYSQL_HOST = 'localhost'
   RUBY_VERSION = 'ruby-x.x.x'
