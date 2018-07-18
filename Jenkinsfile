@@ -8,7 +8,7 @@ pipeline {
                 sh 'gem install bundler'
                 sh ' -d \$HOME/.rbenv'
                 sh '-d \$HOME/.rbenv/plugins/ruby-build'
-                sh 'cd /var/lib/jenkins/jobs/CD/workspace && env RBENV_ROOT\=\$HOME/.rbenv RBENV_VERSION\=2.3.7 CONFIGURE_OPTS\= RUBY_CONFIGURE_OPTS\= \$HOME/.rbenv/bin/rbenv local 2>/dev/null || true'
+                sh 'cd /var/lib/jenkins/jobs/rails-training/branches/master/workspace && env RBENV_ROOT\=\$HOME/.rbenv RBENV_VERSION\=2.3.7 CONFIGURE_OPTS\= RUBY_CONFIGURE_OPTS\= \$HOME/.rbenv/bin/rbenv local 2>/dev/null || true'
                 sh 'mkdir \$HOME/.rbenv/.lock'
                 sh 'env RBENV_ROOT\=\$HOME/.rbenv RBENV_VERSION\=2.3.7 CONFIGURE_OPTS\= RUBY_CONFIGURE_OPTS\= \$HOME/.rbenv/bin/rbenv versions --bare'
                 sh 'env RBENV_ROOT\=\$HOME/.rbenv RBENV_VERSION\=2.3.7 CONFIGURE_OPTS\= RUBY_CONFIGURE_OPTS\= \$HOME/.rbenv/bin/rbenv rehash'
