@@ -5,7 +5,7 @@ pipeline {
 
         stage('Deploy - Staging') {
             steps {
-                sh 'cbundle exec cap qa deploy'
+                sh 'bundle exec cap qa deploy'
                 sh 'echo run-smoke-tests'
             }
         }
