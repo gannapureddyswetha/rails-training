@@ -3,10 +3,10 @@ pipeline {
     stages {
         /* "Build" and "Test" stages omitted */
 
-        stage('Deploy - Staging') {
+        stage('Deploy - qa') {
             steps {
                 sh 'gem install bundler'
-                sh 'bundle exec cap qa deploy'
+                sh 'cap qa deploy'
                 sh 'echo run-smoke-tests'
             }
         }
