@@ -5,7 +5,6 @@ pipeline {
 
         stage('smoketest - Development') {
             steps {
-                sh 
                 sh 'gem install bundler'
                 sh 'bundle install'
                 sh 'echo run-smoke-tests'
