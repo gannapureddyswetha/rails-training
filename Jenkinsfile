@@ -1,7 +1,16 @@
 pipeline {
     agent any
     stages {
-        /* "Build" and "Test" stages omitted */
+        stage ('Checkout SCM') {
+            steps {checkout([$class: 'GitSCM', 
+                   branches: [[name: '*/master']], 
+                   doGenerateSubmoduleConfigurations: false, 
+                   extensions: [[$class: 'CleanCheckout']], 
+                   submoduleCfg: [], 
+                   userRemoteConfigs: [[url: 'https://github.com/gannapureddyswetha/rails-training.git']]
+                   ])
+            }
+        }
 
         stage('smoketest - Development') {
             steps {
