@@ -5,7 +5,6 @@ pipeline {
         stage('CI-Dev Bundleinstall ') {
             steps {
                 sh 'export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)" && bundle install'
-                
             }
         }
         stage('Sanity check') {
